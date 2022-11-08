@@ -1,7 +1,9 @@
 .header {
 	width: 100%;
 	background-color: thistle;
-	padding: 1.5%;
+	height: 50px;
+	display: flex;
+	align-items: center;
 }
 
 .link {
@@ -9,6 +11,9 @@
 	text-decoration: none;
 	background-color: aliceblue;
 	color: blueviolet;
-	padding: 0.5%;
 	border-radius: 5%;
+	height: 30px;
+	padding: 5px;
+	margin-left: 10px;
+	line-height: 2.8ch;
 }
