@@ -7,9 +7,18 @@ export const postsAPI = createApi({
 	}),
 	endpoints: (builder) => ({
 		getAllPosts: builder.query({
-			query: () => '/posts',
+			query: () => ({
+				url: '/posts',
+				method: 'GET',
+			}),
+		}),
+		getPostById: builder.query({
+			query: (id) => ({
+				url: `/posts/${id}`,
+				method: 'GET',
+			}),
 		}),
 	}),
 });
 
-export const { useGetAllPostsQuery } = postsAPI;
+export const { useGetAllPostsQuery, useGetPostByIdQuery } = postsAPI;
