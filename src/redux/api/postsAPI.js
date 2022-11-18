@@ -18,7 +18,17 @@ export const postsAPI = createApi({
 				method: 'GET',
 			}),
 		}),
+		getPostsByLimit: builder.query({
+			query: (limit) => ({
+				url: `posts?_limit=${limit}`,
+				method: 'GET',
+			}),
+		}),
 	}),
 });
 
-export const { useGetAllPostsQuery, useGetPostByIdQuery } = postsAPI;
+export const {
+	useGetAllPostsQuery,
+	useGetPostByIdQuery,
+	useGetPostsByLimitQuery,
+} = postsAPI;
