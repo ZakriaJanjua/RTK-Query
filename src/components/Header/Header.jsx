@@ -14,6 +14,9 @@ export function Header() {
 			<Link className='link' to='/rtk-limit'>
 				RTK-Limit
 			</Link>
+			<Link className='link' to='/rtk-delete'>
+				RTK-Delete
+			</Link>
 		</header>
 	);
 }
