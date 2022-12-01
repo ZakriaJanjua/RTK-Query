@@ -30,6 +30,16 @@ export const postsAPI = createApi({
 				method: 'DELETE',
 			}),
 		}),
+		createPost: builder.mutation({
+			query: (newPost) => ({
+				url: '/posts',
+				method: 'POST',
+				body: newPost,
+				headers: {
+					'Content-type': 'application/json; charset=UTF-8',
+				},
+			}),
+		}),
 	}),
 });
 
@@ -38,4 +48,5 @@ export const {
 	useGetPostByIdQuery,
 	useGetPostsByLimitQuery,
 	useDeletePostByIdMutation,
+	useCreatePostMutation,
 } = postsAPI;

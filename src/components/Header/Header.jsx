@@ -17,6 +17,9 @@ export function Header() {
 			<Link className='link' to='/rtk-delete'>
 				RTK-Delete
 			</Link>
+			<Link className='link' to='/rtk-create'>
+				RTK-Create
+			</Link>
 		</header>
 	);
 }
