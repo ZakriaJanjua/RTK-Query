@@ -7,6 +7,7 @@ import RTKDelete from './pages/RTK-Delete/RTK-Delete';
 import RTKFetch from './pages/RTK-Fetch/RTK-Fetch';
 import RTKFetchById from './pages/RTK-FetchById/RTK-FetchById';
 import RTKLimit from './pages/RTK-Limit/RTK-Limit';
+import RTKUpdate from './pages/RTK-Update/RTK-Update';
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 				<Route path='/rtk-limit' element={<RTKLimit />} />
 				<Route path='/rtk-delete' element={<RTKDelete />} />
 				<Route path='/rtk-create' element={<RTKCreate />} />
+				<Route path='/rtk-update' element={<RTKUpdate />} />
 			</Routes>
 		</>
 	);
