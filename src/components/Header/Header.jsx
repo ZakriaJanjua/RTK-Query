@@ -20,6 +20,9 @@ export function Header() {
 			<Link className='link' to='/rtk-create'>
 				RTK-Create
 			</Link>
+			<Link className='link' to='/rtk-update'>
+				RTK-Update
+			</Link>
 		</header>
 	);
 }

@@ -8,7 +8,6 @@ export default function RTKCreate() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		createPost(form);
-		console.log(result);
 	};
 
 	return (
